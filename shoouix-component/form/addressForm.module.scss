@@ -1,0 +1,44 @@
+@use "sass:color";
+@import "../../css/_variables";
+.wrapperFlexP2 {
+	padding: 1rem 0;
+	width: 100%;
+	@include flex--center-col();
+}
+.form {
+	color: $black-1;
+	width: 100%;
+	@include m7() {
+		width: 60%;
+	}
+	@include m12() {
+		width: 40%;
+	}
+	@include min-w(1080px) {
+		width: 30%;
+	}
+	@include flex--center-col();
+}
+.formGroup {
+	width: 100%;
+	margin-bottom: 0.75rem;
+}
+.formControl2 {
+	padding: 0.25rem;
+	display: block;
+	width: 100%;
+	border: 1px solid color.scale($p--color, $alpha: -70%);
+	border-radius: 3px;
+	line-height: 1.5;
+	&:focus {
+		outline: 0;
+		border: 2px solid color.scale($p--color, $alpha: -20%);
+	}
+}
+.label {
+	display: block;
+	line-height: 1.5;
+	@include m12() {
+		font-size: 1.25rem;
+	}
+}

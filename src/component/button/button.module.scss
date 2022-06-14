@@ -1,0 +1,54 @@
+@use "sass:color";
+@import '../../css/variables';
+
+@mixin btn() {
+  appearance: none;
+  margin: 0.5rem;
+  padding: 0;
+  padding: 0.5rem 1rem;
+  min-width: 7rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  text-transform: capitalize;
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+}
+
+.btn {
+  @include btn();
+  color: $white_0;
+  border: 2px solid $p-color;
+  background-color: $p-color;
+}
+
+.btnDisabled {
+  @include btn();
+  // color: color.scale($color: $white-1, $lightness: -80%);
+  // border: color.scale($color: $p-color, $lightness: -30%);
+  // background-color: color.scale($color: $p-color, $alpha: -40%);
+}
+
+.btnOutline {
+  @include btn();
+  color: $black-1;
+  border: 2px solid $p-color;
+  background-color: $white-1;
+}
+
+.btnOutlineDisabled {
+  @include btn();
+  color: opacify($color: #000000, $amount: 0.6);
+  border: 2px solid opacify($color: $p-color, $amount: 0.6);
+  background-color: opacify($color: $white-1, $amount: 0.7);
+}
+
+.hideVis {
+  visibility: hidden;
+  display: none;
+}

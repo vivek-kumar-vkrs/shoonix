@@ -1,0 +1,38 @@
+@use "sass:color";
+@import "../../css/variables";
+
+.formControl {
+	appearance: none;
+	background: none white;
+	border: 1px solid rgb(193, 199, 208);
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: 1rem;
+	margin: 0px;
+	min-width: 1px;
+	padding: 8px 12px;
+	transition: box-shadow 100ms linear 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: inherit;
+	width: 100%;
+
+	&:hover {
+		border-color: rgb(165, 173, 186);
+		outline: 0px;
+	}
+
+	&:focus {
+		border-color: rgb(38, 132, 255);
+		outline: 0px;
+	}
+}
+.label {
+	display: block;
+	line-height: 1.5;
+	@include m12() {
+		@include h4();
+	}
+	text-transform: capitalize;
+}

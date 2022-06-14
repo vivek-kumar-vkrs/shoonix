@@ -1,0 +1,41 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.header {
+	margin-bottom: 2rem;
+	@include m7() {
+		margin-bottom: 3rem;
+	}
+	@include m12() {
+		margin-bottom: 4rem;
+	}
+	@include d3();
+	font-weight: 800;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.subHeader {
+	margin-bottom: 2rem;
+	@include m7() {
+		margin-bottom: 3rem;
+	}
+	@include m12() {
+		margin-bottom: 4rem;
+	}
+	@include d5();
+	font-weight: 800;
+	text-align: center;
+	text-transform: capitalize;
+}
+.titleD5 {
+	@include d5();
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.titleD5AlignCenter {
+	@include d5();
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+}

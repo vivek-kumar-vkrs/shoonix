@@ -1,0 +1,76 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.wrapperFlex {
+	padding: 10rem 0;
+	width: 100%;
+	min-height: 80vh;
+	@include flex--center-col();
+}
+.wrapperFlexP2 {
+	padding: 1rem 0;
+	width: 100%;
+	@include flex--center-col();
+}
+.form {
+	color: $black-1;
+	width: 100%;
+	@include m7() {
+		width: 60%;
+	}
+	@include m12() {
+		width: 30%;
+	}
+	padding: 2rem 0.5rem;
+	@include flex--center-col();
+}
+.title2 {
+	@include h4();
+	font-weight: 500;
+}
+.title {
+	@include display-6();
+	font-weight: 600;
+}
+.formGroup {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+.formControl {
+	display: block;
+	width: 100%;
+	@include h4();
+	padding: 0.5rem 1rem;
+	border: 1px solid $p--color;
+	line-height: 1.2;
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 0.09rem opacify($color: $p--color, $amount: 0.5);
+	}
+}
+.formControl2 {
+	display: block;
+	width: 100%;
+	// @include h4();
+	font-weight: 600;
+	@include m12() {
+		@include h4();
+	}
+	padding: 0.25rem;
+	border-width: 0;
+	border-bottom: 1px solid $p--color;
+	line-height: 1.5;
+	&:focus {
+		outline: 0;
+		border-width: 0;
+		border-bottom: 2px solid color.scale($p--color, $alpha: -30%);
+	}
+}
+.label {
+	display: block;
+	line-height: 1.5;
+	@include m12() {
+		@include h4();
+	}
+	text-transform: capitalize;
+}

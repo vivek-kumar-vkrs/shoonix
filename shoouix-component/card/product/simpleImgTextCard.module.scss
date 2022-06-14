@@ -1,0 +1,20 @@
+@use "sass:color";
+@import "../../../css/_variables";
+.simpleImgTextCard {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+.imgBlock {
+}
+.img {
+	max-width: 4rem;
+	width: 100%;
+	height: auto;
+}
+.textBlock {
+	padding-left: 1rem;
+}
+.bold {
+	font-weight: 600;
+}

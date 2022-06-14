@@ -1,0 +1,99 @@
+@import '../../css/_variables';
+
+.jaCenter {
+  @include f-center();
+}
+.jaCenterCol {
+  @include f-center-col();
+}
+.jaSpBwCenter {
+  @include f-spBw();
+}
+
+.jaCenterColM7Row {
+  width: 100%;
+  @include f-center-col();
+  @include m7() {
+    flex-direction: row;
+  }
+}
+
+.jaCenterColM7JSpBwRow {
+  width: 100%;
+  @include f-center-col();
+  @include m7() {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.jaCenterColM12Row {
+  width: 100%;
+  @include f-center-col();
+  @include m12() {
+    flex-direction: row;
+  }
+}
+
+.jaCenterColM12JSpBwRow {
+  width: 100%;
+  @include f-center-col();
+  @include m12() {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.flexWrapJCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.showAfterM7 {
+  display: none;
+  @include m7() {
+    display: block;
+  }
+}
+
+.showAfterM12 {
+  display: none;
+  @include m12() {
+    display: block;
+  }
+}
+
+.showAfterM18 {
+  display: none;
+  @include m12() {
+    display: block;
+  }
+}
+
+.showUptoM7 {
+  display: block;
+  @include m7() {
+    display: none;
+  }
+}
+
+.showBwM7M12 {
+  display: none;
+  @include m7() {
+    display: block;
+  }
+  @include m12() {
+    display: none;
+  }
+}
+
+.showBwM12M18 {
+  display: none;
+  @include m12() {
+    display: block;
+  }
+  @include min-w(1800px) {
+    display: none;
+  }
+}

@@ -1,0 +1,73 @@
+@use "sass:color";
+@import "../../../css/_variables";
+.card {
+	margin: 0rem;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	width: 100%;
+}
+.wrapperFlex {
+	@include flex--center-col();
+}
+.imgBlock {
+	width: 100%;
+	position: relative;
+}
+.wishlist {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	// padding-top: 0.5rem;
+	// padding-right: 0.5rem;
+}
+.imgFluid {
+	max-width: 100%;
+	height: auto;
+}
+.brand {
+	margin: 0.5rem 0;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.title {
+	margin: 0.5rem 0;
+	width: 100%;
+	@include h4();
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+}
+.textContent {
+	width: 100%;
+	text-align: center;
+	@include h4();
+}
+.flex {
+	margin: 0;
+	width: 80%;
+	@include flex--sp-btwn();
+	font-weight: 600;
+}
+// .price,
+// .msp,
+// .discount{
+//     // margin: 0;
+// }
+.price {
+	// font-weight: 600;
+}
+.msp {
+	color: color.scale($black-1, $alpha: -40%);
+	text-decoration: line-through;
+}
+.discount {
+	color: $p--color;
+	font-weight: 800;
+}
+.boxShadow {
+	box-shadow: 0 0 0 0.125rem rgba(66, 66, 66, 0.658);
+}

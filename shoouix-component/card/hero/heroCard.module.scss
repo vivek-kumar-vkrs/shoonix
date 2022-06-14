@@ -1,0 +1,24 @@
+@use "sass:color";
+@import "../../../css/_variables";
+
+.heroCard {
+	padding: 1rem 0;
+	@include flex--center-col();
+	position: relative;
+}
+.imageBlock {
+}
+.img {
+	max-width: 100%;
+	height: auto;
+}
+.contentBlock {
+	width: 100%;
+	@include flex--center();
+}
+.title,
+.subtitle {
+	padding: 0.25rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}

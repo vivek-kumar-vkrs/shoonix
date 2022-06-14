@@ -1,0 +1,57 @@
+@import "../../css/variables";
+.slider {
+	width: inherit;
+	height: inherit;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.slide {
+	min-width: 100%;
+	height: auto;
+	transition: 0.5s;
+	@include flex--center-col();
+}
+
+%btn-styles {
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 1.5rem;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: #49494977;
+
+	// &:focus,
+	// &:hover {
+	// 	background-color: #33333377;
+	// }
+	// i {
+	// 	color: $p--color;
+	// 	font-size: 1.5rem;
+	// 	@include min-w(1200px) {
+	// 		font-size: 3rem;
+	// 	}
+	// }
+	svg {
+		path {
+			fill: $p--color;
+		}
+	}
+}
+
+.goLeft {
+	left: 0;
+	@extend %btn-styles;
+}
+
+.goRight {
+	right: 0;
+	@extend %btn-styles;
+}

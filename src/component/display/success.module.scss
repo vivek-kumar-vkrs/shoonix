@@ -1,0 +1,12 @@
+@use "sass:color";
+@import '../../css/_variables';
+
+.title {
+  color: #1a1a1add;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+.msg {
+  color: #1a1a1a8a;
+  margin: 2rem;
+}

@@ -1,0 +1,17 @@
+@import '../../css/_variables';
+
+.screenCenter {
+  height: 80vh;
+  width: 100wh;
+  @include f-center();
+}
+
+.responsifyCards {
+  margin: 1rem 0;
+  @include f-center-col();
+  @include m7() {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

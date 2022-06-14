@@ -1,0 +1,290 @@
+@use "sass:color";
+@import '../../css/_variables';
+.screenCenter{
+  height: 80vh;
+  width: 100vw;
+  @include flex--center-col();
+}
+.screenCenterSpinner {
+  color: $black-1;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.screenCenterSpinner div {
+  transform-origin: 40px 40px;
+  animation: screenCenterSpinner 1.2s linear infinite;
+}
+.screenCenterSpinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #1a1a1a;
+}
+.screenCenterSpinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.screenCenterSpinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.screenCenterSpinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.screenCenterSpinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.screenCenterSpinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.screenCenterSpinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.screenCenterSpinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.screenCenterSpinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.screenCenterSpinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.screenCenterSpinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.screenCenterSpinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.screenCenterSpinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes screenCenterSpinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+// end
+.spinner0 {
+    color: $black-1;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .spinner0 div {
+    transform-origin: 40px 40px;
+    animation: spinner0 1.2s linear infinite;
+  }
+  .spinner0 div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #1a1a1a;
+  }
+  .spinner0 div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .spinner0 div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .spinner0 div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .spinner0 div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .spinner0 div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .spinner0 div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .spinner0 div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .spinner0 div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .spinner0 div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .spinner0 div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .spinner0 div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .spinner0 div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes spinner0 {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+//   2nd
+
+.roller0 {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .roller0 div {
+    animation: roller0 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .roller0 div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .roller0 div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .roller0 div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .roller0 div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .roller0 div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .roller0 div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .roller0 div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .roller0 div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .roller0 div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .roller0 div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .roller0 div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .roller0 div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .roller0 div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .roller0 div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .roller0 div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .roller0 div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .roller0 div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes roller0 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+//   3rd ripple
+
+.ripple0 {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .ripple0 div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ripple0 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .ripple0 div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes ripple0 {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }

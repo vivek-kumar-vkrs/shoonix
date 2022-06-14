@@ -1,0 +1,13 @@
+@use "sass:color";
+@import '../../css/_variables';
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  @include min-w(700px) {
+    padding: 0 3rem;
+  }
+  @include min-w(1200px) {
+    padding: 0 8rem;
+  }
+}

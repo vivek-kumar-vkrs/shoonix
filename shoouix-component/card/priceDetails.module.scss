@@ -1,0 +1,16 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.priceDetails{
+padding: 0.5rem;
+}
+.textBlock{
+@include flex--sp-btwn();
+}
+.titleValue{
+color: color.scale($black-1, $alpha: -10%);
+}
+.finalKey, .finalValue{
+  font-size: h4();
+  font-weight: 600;
+}

@@ -1,0 +1,57 @@
+@use "sass:color";
+@import "../../../css/_variables";
+.heroImageCard {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	max-height: 600px;
+}
+.heroImageCard::after {
+	content: " ";
+	position: absolute;
+	z-index: 10;
+	display: block;
+	height: 100%;
+	max-height: 600px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+.headerBlock {
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include flex--center();
+}
+.header {
+	color: #e0e0e0;
+	@include d6();
+	font-weight: 800;
+	@include m7() {
+		@include d4();
+	}
+}
+.subHeader {
+	color: #f2f2f2;
+	@include d5();
+	font-weight: 600;
+}
+.imgFluid {
+	max-width: 100%;
+	width: inherit;
+	height: inherit;
+}
+.linkToOverlay {
+	position: absolute;
+	z-index: 12;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+}

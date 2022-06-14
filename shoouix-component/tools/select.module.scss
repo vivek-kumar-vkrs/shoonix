@@ -1,0 +1,7 @@
+@import '../../css/_variables';
+
+.selectOption{
+  &:focus, &:hover{
+    background-color: antiquewhite;
+  }
+}

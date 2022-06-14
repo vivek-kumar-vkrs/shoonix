@@ -1,0 +1,22 @@
+@use "sass:color";
+@import '../../../css/_variables';
+.authNavLink{
+    margin: 0 1rem;
+    color: $black-1;
+    transition: all 0.2s;
+    @include raleway(){
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    &:hover{
+      color: color.scale($p--color, $lightness: 10%);
+    }
+}
+.display1200{
+    display: none;
+    @include m12(){
+        display: block;
+    }
+}

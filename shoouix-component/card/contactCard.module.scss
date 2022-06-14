@@ -1,0 +1,55 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.contactCard {
+	margin: 1rem;
+	padding: 0.5rem;
+	width: 20rem;
+	height: 16rem;
+	max-width: 100%;
+	max-height: 100%;
+	@include flex--center-col();
+	text-align: center;
+	background-image: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+	border: 1px solid color.scale($black-1, $alpha: -40%);
+	border-radius: 3px;
+	box-shadow: 0 2px 2px #cecece85;
+}
+.linkTo {
+	svg {
+		height: 4rem;
+		width: 4rem;
+		path {
+			fill: color.scale($black-1, $alpha: -20%);
+		}
+	}
+	&:focus,
+	&:hover {
+		svg {
+			path {
+				fill: color.scale($p--color, $saturation: +20%);
+			}
+		}
+	}
+}
+.img {
+	margin-bottom: 0.25rem;
+	height: 5rem;
+	width: 5rem;
+	color: $p--color;
+}
+.imgText {
+	margin-bottom: 1rem;
+	font-size: 14px;
+	color: rgba(0, 128, 0, 0.829);
+	text-transform: capitalize;
+}
+.title {
+	@include h4();
+	color: color.scale($black-1, $alpha: -20%);
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+.content {
+	@include lead();
+}

@@ -1,0 +1,33 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.deskNav {
+	margin: 0 2rem;
+	display: none;
+	@include m12() {
+		display: block;
+	}
+	@include raleway() {
+		font-size: 1.3rem;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+}
+.deskNavLink {
+	margin: 0 1rem;
+	color: $black-1;
+	transition: all 0.2s;
+	@include raleway() {
+		font-size: 1rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&:hover {
+		color: color.scale($p--color, $lightness: 10%);
+	}
+}
+
+.active {
+	color: color.scale($p--color, $lightness: 10%);
+}

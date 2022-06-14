@@ -1,0 +1,11 @@
+@import "../../css/_variables";
+.discountRange {
+  @include flex--center-col();
+}
+.discountText {
+  // font-weight: 600;
+  letter-spacing: 0.05rem;
+  &:focus, &:hover {
+    color: $p--color;
+  }
+}

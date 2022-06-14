@@ -1,0 +1,82 @@
+@use "sass:color";
+@import "../../../css/_variables";
+.card {
+	margin: 0.5rem;
+	// padding: 0.5rem;
+	@include m7() {
+		margin: 2rem;
+	}
+	// height: 100%;
+	width: 45%;
+	@include m7() {
+		width: 40%;
+	}
+	@include m12() {
+		width: 30%;
+	}
+	@include m7() {
+		padding: 1rem;
+	}
+	@include m12() {
+		padding: 2rem;
+	}
+}
+.wrapperFlex {
+	@include flex--center-col();
+	color: $black-1;
+}
+.imgBlock {
+	// width: 100%;
+	position: relative;
+}
+.img {
+	max-width: 100%;
+	height: auto;
+}
+.wishlist {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+}
+.brand {
+	margin: 0;
+	width: 100%;
+	font-weight: 600;
+	text-align: left;
+}
+.title {
+	margin: 0;
+	width: 100%;
+	color: color.scale($black-1, $alpha: -20%);
+	text-align: left;
+}
+.textContent {
+	width: 100%;
+	text-align: center;
+	@include h4();
+	// color: #ffffffa9;
+}
+.priceBlock {
+	margin: 0;
+	width: 90%;
+	@include flex--sp-btwn();
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+.price {
+	font-weight: 600;
+}
+.price,
+.msp,
+.discount {
+	margin: 0;
+	font-weight: 600;
+}
+.msp {
+	color: color.scale($black-1, $alpha: -40%);
+	text-decoration: line-through;
+}
+.boxShadow {
+	box-shadow: 0 0 0 0.125rem rgba(66, 66, 66, 0.658);
+}

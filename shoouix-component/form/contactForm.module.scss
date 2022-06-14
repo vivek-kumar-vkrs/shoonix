@@ -1,0 +1,37 @@
+@import "../../css/_variables";
+
+.contactForm{
+    @include flex--center-col();
+    @include m12(){
+      width: 60%;
+    }
+  }
+  .formGroup{
+    margin-bottom: 1rem;
+    width: 100%;
+    // @include m7(){
+    //   margin: 1.5rem;
+    // }
+  }
+  .formControl{
+    padding: 0.5rem 1rem;
+    // @include m7(){
+    //   padding: 1rem;
+    // }
+    display: block;
+    width: 100%;
+    @include h4();
+    border: 1px solid $primary--color;
+    border-radius: 0.25rem;
+    &:focus{
+      border-color: $primary--color;
+      outline: 0;
+      box-shadow: 0 0 0 0.09rem opacify($color: $primary--color, $amount: 0.5)
+    }
+  }
+  .label {
+    display: block;
+    line-height: 1.5;
+    @include h4();
+    font-weight: 500;
+  }

@@ -1,0 +1,29 @@
+@import "../../../css/_variables";
+
+.navSearch{
+    padding: 0 0.5rem;
+}
+.displayNone1200{
+    @include m12(){
+        display: none;
+    }
+}
+.display1200{
+    display: none;
+    @include m12(){
+        display: block;
+    }
+}
+.formControl{
+    display: block;
+    width: 100%;
+    @include h4();
+    padding: 0.125rem 1rem;
+    border: 1px solid $p--color;
+    border-radius:  0.5rem;
+    // line-height: 1.2;
+    &:focus{
+      outline: 0;
+      box-shadow: 0 0 0 0.09rem opacify($color: $p--color, $amount: 0.5)
+    }
+  }

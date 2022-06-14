@@ -1,0 +1,7 @@
+@use "sass:color";
+@import '../../css/_variables';
+
+.text{
+    @include d5();
+    font-weight: 300;
+}

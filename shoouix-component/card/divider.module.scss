@@ -1,0 +1,36 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.hDivider {
+  background-color: $white-1;
+  height: 10px;
+}
+
+.vDivider {
+  background-color: $white-1;
+  width: 10px;
+}
+.divider{
+  background-color: $white-1;
+  height: 1rem;
+}
+.dividerW2{
+  background-color: $white-1;
+  height: 2rem;
+}
+.dividerW3{
+  background-color: $white-1;
+  height: 3rem;
+}
+.dividerW75{
+  background-color: $white-1;
+  height: 0.75rem;
+}
+.dividerWithTitle{
+  padding: 0.5rem;
+  background-color: $white-1;
+
+}
+.title{
+  font-weight: 600;
+}

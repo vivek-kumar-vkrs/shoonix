@@ -1,0 +1,30 @@
+@use "sass:color";
+@import "../../css/_variables";
+.priceSelect{
+  @include flex--center-col();
+}
+.formGroup{
+  width: 100%;
+}
+.label {
+  display: block;
+  // font-size: 1rem;
+  @include h4();
+  color: $p--color;
+}
+.formControl{
+  display: block;
+  padding: 0.25rem;
+  border-width: 0;
+  border-bottom: 1px solid $p--color;
+  border-radius: 3px;
+  font-size: 1rem;
+  &:focus{
+    outline: 0;
+    border-width: 0;
+    border-bottom: 1px solid $p--color;
+  }
+}
+.formControlSlider{
+// Do it later
+}

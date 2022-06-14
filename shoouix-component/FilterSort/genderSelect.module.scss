@@ -1,0 +1,25 @@
+@import "../../css/_variables";
+.genderSelect {
+	@include flex--center-col();
+}
+.buttonBlock {
+	width: 100%;
+  @include flex--sp-btwn();
+  button {
+    &:focus,
+    &:hover {
+      background-color: $p--color;
+    }
+  }
+}
+.buttonTitle {
+	padding-right: 1rem;
+}
+.genderText {
+	font-weight: 600;
+	text-transform: capitalize;
+	&:focus,
+	&:hover {
+		color: $white-0;
+	}
+}

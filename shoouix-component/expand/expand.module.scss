@@ -1,0 +1,55 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.expand {
+	padding: 0.5rem;
+	width: 100%;
+}
+.wrapperFlex {
+	@include flex--sp-btwn();
+}
+.block1 {
+	@include flex--center();
+	svg {
+		height: 2rem;
+		width: 2rem;
+		path {
+			fill: color.scale($p--color, $alpha: -10%);
+		}
+	}
+}
+.block2 {
+	svg {
+		height: 1.5rem;
+		width: 1.5rem;
+		path {
+			fill: color.scale($black-1, $alpha: -20%);
+		}
+	}
+}
+.imgFluid {
+	max-width: 100%;
+	width: 2rem;
+	height: auto;
+}
+
+.text {
+	margin-left: 1rem;
+	color: $black-1;
+	&:focus,
+	&:hover {
+		color: $p--color;
+	}
+}
+.title {
+	@include h4();
+	font-weight: 600;
+	color: color.scale($black-1, $alpha: -10%);
+	text-transform: capitalize;
+	margin: 0;
+}
+.subtitle {
+	margin: 0;
+	color: color.scale($black-1, $alpha: -20%);
+	// font-size: 1rem;
+}

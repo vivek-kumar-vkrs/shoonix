@@ -1,0 +1,69 @@
+@import "../../css/_variables";
+
+.modal {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 101;
+	left: 0;
+	top: 0;
+	@include flex--center();
+	background-color: #000000a0;
+	animation: fadeIn 0.5s ease-out;
+}
+.modalContainer {
+	position: absolute;
+	padding: 1rem;
+	max-height: 90%;
+	width: 100%;
+	@include m7() {
+		width: 70%;
+	}
+	@include m12() {
+		width: 50%;
+	}
+	bottom: 0;
+	overflow: auto;
+	background-color: #f2f2f2;
+	box-shadow: 0 2px 2px #a8a8a8b0;
+	border-radius: 3px;
+}
+.modalHeader {
+	@include flex--center() {
+		justify-content: space-between;
+	}
+	margin-bottom: 1rem;
+	svg {
+		height: 1.5rem;
+		width: 1.5rem;
+		path {
+			fill: rgba(0, 0, 0, 0.767);
+		}
+	}
+	svg:hover,
+	svg:focus {
+		path {
+			fill: rgb(2, 2, 2);
+		}
+		cursor: pointer;
+	}
+}
+.modalTitle {
+	flex-grow: 4;
+	margin: 0;
+	@include h4();
+	text-align: center;
+	font-weight: 600;
+}
+
+// KEYFRAMES
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

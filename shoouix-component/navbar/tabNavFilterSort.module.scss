@@ -1,0 +1,28 @@
+@use "sass:color";
+@import '../../css/_variables';
+
+.addMarginTop{
+    padding-top: 4rem;
+}
+.tabNav{
+    @include m12(){
+        display: none;
+    }
+    @include flex--sp-btwn();
+    padding: 0.5rem ;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $white-0;
+    box-shadow: 1px 0 3px color.scale($black_1, $alpha: -80%);
+}
+.tabItem{
+    @include flex--center();
+    width: 47%;
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+}

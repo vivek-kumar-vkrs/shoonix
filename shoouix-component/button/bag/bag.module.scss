@@ -1,0 +1,27 @@
+@use 'sass:color';
+@import "../../../css/_variables";
+
+.flexCenter {
+	@include flex--center();
+	svg {
+		height: 2rem;
+		width: 2rem;
+		path {
+			fill: #1a1a1ae1;
+		}
+	}
+}
+.text {
+	margin: 0;
+	margin-left: 0.5rem;
+	color: color.scale($black-1, $alpha: -15%);
+}
+.bagImg {
+	svg {
+		height: 2rem;
+		width: 2rem;
+		path {
+			fill: none;
+		}
+	}
+}

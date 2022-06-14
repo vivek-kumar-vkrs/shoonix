@@ -1,0 +1,9 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.text {
+	color: $black-1;
+}
+.activeText {
+	color: $p--color;
+}

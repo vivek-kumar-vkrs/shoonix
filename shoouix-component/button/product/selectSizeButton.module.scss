@@ -1,0 +1,16 @@
+@use "sass:color";
+@import '../../../css/_variables';
+.btnCircle{
+  margin: 0.5rem;
+  border: 1px solid $p--color;
+  border-radius: 100%;
+}
+.btnCircleDisabled{
+  margin: 0.5rem;
+  border-radius: 100%;
+  border: 1px solid color.scale($p--color, $alpha: -50%);
+}
+.selected{
+  color: $white-0;
+  background-color: color.scale($p--color, $saturation: -10%);
+}

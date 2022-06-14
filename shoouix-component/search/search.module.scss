@@ -1,0 +1,25 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.formControl {
+	display: block;
+	width: 100%;
+	@include h4();
+	padding: 0.5rem 1rem;
+	border: 1px solid color.scale($p--color, $alpha: -50%);
+	border-radius: 3px;
+	line-height: 1.2;
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 0.09rem opacify($color: $p--color, $amount: 0.5);
+	}
+}
+
+.label {
+	display: block;
+	line-height: 1.5;
+	@include m12() {
+		@include h4();
+	}
+	text-transform: capitalize;
+}

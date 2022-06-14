@@ -1,0 +1,22 @@
+@import '../../css/_variables';
+
+.flexWrapper{
+    @include m12(){
+        display: flex;
+    }
+}
+.leftBlock{
+    @include m12(){
+        position: sticky;
+        top: 10px;
+        height: 80vh;
+        width: 40%;
+        @include flex--center-col();
+        // background-color: rgb(36, 54, 54);
+    }
+}
+.rightBlock{
+    @include m12(){
+        width: 60%;
+    }
+}

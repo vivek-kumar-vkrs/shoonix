@@ -1,0 +1,49 @@
+@use "sass:color";
+@import "../../css/_variables";
+.mobileNav {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 1rem;
+	background-color: $white-0;
+	width: 100vw;
+	height: 90vh;
+	@include m12 {
+		display: none;
+	}
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #1a1a1a4b;
+	animation: slidein 0.2s ease-out;
+}
+.link {
+	padding: 0.5rem;
+	display: block;
+	color: $black-1;
+}
+.dNone {
+	display: none;
+}
+.active {
+	color: color.scale($p--color, $lightness: 10%);
+}
+@keyframes slidein {
+	from {
+		transform: translate(-100%);
+	}
+	to {
+		transform: translate(0);
+	}
+}
+.navLink {
+	font-size: 1.25rem;
+	padding: 0.25rem 0.5rem;
+	font-weight: 600;
+	color: color.scale($black-1, $alpha: -10%);
+}
+.navLinkMuted {
+	font-size: 1.25rem;
+	padding: 0.25rem 0.5rem;
+	font-weight: 600;
+	color: color.scale($black-1, $alpha: -20%);
+}

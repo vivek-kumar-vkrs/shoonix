@@ -1,0 +1,24 @@
+@use"sass:color";
+@import '../../css/_variables';
+.simpleExpand{
+  padding: 0.25rem 0.5rem;
+}
+.header{
+  @include flex--sp-btwn();
+}
+.title{
+  font-weight: 600;
+}
+.header{
+  path{
+    fill: $p--color;
+  }
+}
+.show{
+  // display: block;
+  visibility: visible;
+}
+.hide{
+  // display: none;
+  visibility: hidden;
+}

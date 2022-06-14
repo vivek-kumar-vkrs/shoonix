@@ -1,0 +1,9 @@
+@use "sass:color";
+@import "../../css/_variables";
+.errorBlock {
+	@include flex--center-col();
+}
+.errMsg {
+	color: red;
+	margin: 1rem;
+}

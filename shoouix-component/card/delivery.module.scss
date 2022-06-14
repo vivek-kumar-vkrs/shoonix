@@ -1,0 +1,60 @@
+@use "sass:color";
+@import "../../css/_variables";
+.delivery {
+	padding: 1rem 0.5rem;
+	@include flex--center-col();
+}
+.textInfo {
+	align-self: flex-start;
+}
+.formGroup {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+.label {
+	position: relative;
+	display: block;
+	text-transform: capitalize;
+	line-height: 1.5;
+	font-weight: 600;
+	@include m12() {
+		@include h4();
+	}
+}
+.formControl {
+	display: block;
+	width: 100%;
+	// @include h4();
+	padding: 0.5rem 1rem;
+	border: 1px solid $p--color;
+	border-radius: 3px;
+	line-height: 1.2;
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 0.05rem color.scale($p--color, $alpha: -40%);
+	}
+}
+.check {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 2rem;
+	text-transform: capitalize;
+
+	font-weight: 600;
+}
+.success {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 1.5rem;
+}
+.fail {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 2rem;
+	text-transform: capitalize;
+	color: color.scale(red, $alpha: -30%, $lightness: -30%);
+	font-weight: 600;
+}

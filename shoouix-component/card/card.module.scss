@@ -1,0 +1,57 @@
+@import '../../css/_variables';
+.card {
+    color: black;
+    // height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    @include m7(){
+        padding: 1rem;
+    }
+    @include m12(){
+        padding: 2rem;
+    }
+}
+.margin{
+    margin: 1rem;
+    @include m7(){
+        margin: 2rem;
+    }
+}
+.flexWidth{
+    @include m7(){
+        width: 40%;
+    }
+    @include m12(){
+        width: 30%;
+    }
+}
+.wrapperFlex {
+    @include flex--center-col();
+}
+.imgBlock{
+    // width: 100%;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+.circleimg{
+    max-width: 100%;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+}
+.title{
+    width: 100%;
+    // @include h4();
+    text-align: center;
+}
+.textContent{
+    width: 100%;
+    text-align: center;
+    @include h4();
+    // color: #ffffffa9;
+}
+.boxShadow{
+    box-shadow: 0 0 0 0.125rem rgba(66, 66, 66, 0.658);
+}

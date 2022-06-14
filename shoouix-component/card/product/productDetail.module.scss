@@ -1,0 +1,13 @@
+@use "sass:color";
+@import '../../../css/_variables';
+.productDetail{
+  padding: 1rem 0.5rem;
+}
+.title{
+  text-transform: capitalize;
+font-weight: 600;
+}
+.content{
+  text-transform: capitalize;
+  font-weight: 500;
+}

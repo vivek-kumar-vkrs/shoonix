@@ -1,0 +1,29 @@
+@use "sass:color";
+@import '../../../css/_variables';
+.selectSizes{
+  padding: 1rem 0.5rem;
+}
+.title{
+  font-weight: 600;
+}
+.sizes{
+  @include flex--center();
+}
+.sizeStockBlock{
+  @include flex--center-col();
+}
+.size{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sizeDisabled{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color.scale($black-1, $alpha: -50%);
+}
+.stock{
+  height: 1rem;
+  font-size: 12px;
+  color: color.scale($p--color, $saturation: -20%);
+  // text-align: center;
+}

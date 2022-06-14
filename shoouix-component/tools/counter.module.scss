@@ -1,0 +1,11 @@
+@import '../../css/_variables';
+
+.counter{
+    @include flex--center();
+    padding: 0.25rem;
+}
+.qty{
+    padding: 0 0.25rem;
+    margin: 0;
+    color: black;
+}

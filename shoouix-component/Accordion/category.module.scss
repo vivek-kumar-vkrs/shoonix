@@ -1,0 +1,89 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.dnone {
+	display: none;
+}
+.btn,
+.btnSub {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	display: block;
+	padding: 0.5rem;
+}
+.btnSub {
+	padding-left: 1rem;
+}
+.flexSpBtwn {
+	// position: absolute;
+	width: 100%;
+	@include flex--sp-btwn();
+}
+.flexCenter {
+	display: flex;
+	justify-content: flex-start;
+}
+.title,
+.subtitle {
+	margin-bottom: 0;
+}
+.title {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $black-1;
+}
+.subtitle {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.categoryTitle {
+	margin: 0;
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: $black-1;
+}
+.subcategoryLink {
+	margin: 0;
+	padding-bottom: 0.5rem;
+	padding-left: 2rem;
+	display: block;
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 1rem;
+	font-weight: 600;
+	color: $black-1;
+	display: flex;
+	flex-direction: column;
+}
+@mixin heroImg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $black-1;
+	height: 8rem;
+	width: 100%;
+	padding-left: 2rem;
+}
+.addMenImg {
+	background-image: url("../../images/for/men/Men1.png");
+	@include heroImg();
+}
+.addWomenImg {
+	background-image: url("../../images/for/women/Women1.png");
+	@include heroImg();
+}
+.addBoyImg {
+	background-image: url("../../images/for/boy/Boy1.png");
+	@include heroImg();
+}
+.addGirlImg {
+	background-image: url("../../images/for/girl/Girl1.png");
+	@include heroImg();
+}

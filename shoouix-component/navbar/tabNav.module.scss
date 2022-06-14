@@ -1,0 +1,48 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.addMarginTop {
+	padding-top: 4rem;
+}
+.tabNav {
+	@include m12() {
+		display: none;
+	}
+	padding: 0.5rem;
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	background-color: $white-0;
+	box-shadow: 1px 0 3px color.scale($black_1, $alpha: -80%);
+	@include flex--sp-arnd();
+}
+
+.tabItem {
+	width: 100%;
+	@include flex--center();
+	svg {
+		height: 2rem;
+		width: 2rem;
+		path {
+			fill: color.scale($black-1, $alpha: -20%);
+		}
+	}
+	&:focus,
+	&:hover {
+		svg {
+			path {
+				fill: color.scale($p--color, $saturation: +20%);
+			}
+		}
+	}
+}
+
+.active {
+	svg {
+		path {
+			fill: color.scale($p--color, $lightness: 10%);
+		}
+	}
+}

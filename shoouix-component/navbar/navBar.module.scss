@@ -1,0 +1,18 @@
+@import "../../css/_variables";
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0.5rem;
+	width: 100vw;
+	z-index: 100;
+	background: $white-0;
+}
+.title {
+	font-weight: 600;
+	margin: 0;
+	text-transform: capitalize;
+}
+.addNavShadow {
+	box-shadow: 0 1px 2px #00000020;
+}

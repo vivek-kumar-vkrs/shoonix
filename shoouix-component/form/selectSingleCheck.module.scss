@@ -1,0 +1,30 @@
+@use "sass:color";
+@import "../../css/_variables";
+.selectSingleCheck {
+	padding: 0.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.fgCheck {
+	margin: 1rem 0;
+}
+.customCheckInput {
+	cursor: pointer;
+	appearance: none;
+	width: 0.1rem;
+	padding: 0.5rem;
+	border: 1px solid $p--color;
+	border-radius: 100%;
+	box-shadow: 0 0 0 0.1rem color.scale($p--color, $alpha: 30%);
+	&:focus {
+		outline: 0;
+	}
+	&:checked {
+		background-color: color.scale($p--color, $lightness: 30%);
+	}
+}
+.label {
+	text-transform: capitalize;
+	margin-left: 1rem;
+}

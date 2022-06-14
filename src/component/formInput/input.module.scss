@@ -1,0 +1,79 @@
+@use "sass:color";
+@import "../../../css/_variables";
+
+.formGroup {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.formControl {
+	appearance: none;
+	background: none white;
+	border: 1px solid rgb(193, 199, 208);
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: 1rem;
+	margin: 0px;
+	min-width: 1px;
+	padding: 8px 12px;
+	transition: box-shadow 100ms linear 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: inherit;
+	width: 100%;
+
+	&:hover {
+		border-color: rgb(165, 173, 186);
+		outline: 0px;
+	}
+
+	&:focus {
+		border-color: rgb(38, 132, 255);
+		outline: 0px;
+	}
+}
+
+.formControlBkp {
+	display: block;
+	border: 1px solid $p--color;
+	line-height: 1.2;
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 0.09rem opacify($color: $p--color, $amount: 0.5);
+	}
+}
+
+.label {
+	display: block;
+	line-height: 1.5;
+	text-transform: capitalize;
+}
+
+.makeButton {
+	width: 110px;
+	padding: 1rem 0.5rem;
+	font: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	cursor: pointer;
+	&:focus,
+	&:hover {
+		outline: 0;
+	}
+	color: $black-1;
+	border: 2px solid $primary--color;
+	border-radius: 0.25rem;
+}
+.formGroupUploadButton {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.uploadStatus {
+	// display: inline;
+	// margin-left: 0.5rem;
+}

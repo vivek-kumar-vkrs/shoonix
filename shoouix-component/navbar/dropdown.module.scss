@@ -1,0 +1,61 @@
+@use "sass:color";
+@import "../../css/_variables";
+
+.dropdown {
+	cursor: pointer;
+	position: relative;
+}
+.dnone {
+	display: none;
+}
+.header {
+	margin: 0 0.5rem;
+	padding: 0;
+	cursor: pointer;
+	color: color.scale($black-1, $alpha: -10%);
+	text-transform: capitalize;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	transition: all 0.3s;
+	border-bottom: 3px solid #00000000;
+	&:focus,
+	&:hover {
+		border-bottom: 3px solid $p--color;
+	}
+}
+.subHeader {
+	padding: 0.25rem;
+	color: $black-1;
+	font-size: 1.25rem;
+	transition: all 0.3s;
+	color: color.scale($p--color, $saturation: +10%);
+	&:focus,
+	&:hover {
+		color: color.scale($p--color, $saturation: +20%);
+	}
+}
+.dropdownLinks {
+	position: absolute;
+	margin-top: 2.5rem;
+	top: 0;
+	width: 800px;
+	height: 400px;
+	padding: 1rem;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	box-shadow: 0 0 2px #00000044;
+}
+.navlink {
+	padding: 0.25rem;
+	font-size: 1rem;
+	color: $black-1;
+	border-radius: 3px;
+	transition: all 0.3s;
+	// background-color: #f2f2f2;
+	&:focus,
+	&:hover {
+		background-color: color.scale($p--color, $saturation: +20%, $alpha: -90%);
+	}
+}
